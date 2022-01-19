@@ -10,7 +10,6 @@
 
 html,
 body {
-  height: 100%;
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
@@ -143,8 +142,7 @@ article blockquote {
   main {
     max-width: 1264px;
     margin: auto;
-    padding: clamp(2rem, 44vh - 17rem, 15rem) 2.35rem;
-    height: 96.5%;
+    padding: clamp(2rem, 48vh - 17.8rem, 25rem) 2.35rem;
   }
 
   .item-1 {
@@ -181,5 +179,16 @@ article blockquote {
   .item-1 blockquote,
   .item-4 blockquote {
     width: 71ch;
+  }
+}
+
+@media (min-height: 1000px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  main {
+    height: 97%;
   }
 }
