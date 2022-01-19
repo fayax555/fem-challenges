@@ -27,7 +27,17 @@ img {
   max-width: 100%;
 }
 
-/* ---------------------------------- */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* ------------MY STYLES----------- */
 
 body {
   background-color: hsl(210, 46%, 95%);
@@ -85,70 +95,70 @@ article blockquote {
   width: 38ch;
 }
 
-.item-1 {
+.card-1 {
   position: relative;
   background-color: hsl(263, 55%, 52%);
 }
 
-.item-1 .quote-svg {
+.card-1 .quote-svg {
   position: absolute;
   top: 5px;
   right: 22px;
 }
 
-.item-1 > h2 {
+.card-1 > h2 {
   z-index: 1;
 }
 
-.item-2 {
+.card-2 {
   background-color: hsl(217, 19%, 35%);
 }
 
-.item-3,
-.item-5 {
+.card-3,
+.card-5 {
   background-color: white;
   box-shadow: 15px 25px 30px -5px rgba(0, 0, 0, 0.1);
 }
 
-.item-4 {
+.card-4 {
   background-color: hsl(219, 29%, 14%);
 }
 
-.item-1 .name,
-.item-2 .name,
-.item-4 .name,
-.item-1 h2,
-.item-2 h2,
-.item-4 h2 {
+.card-1 .name,
+.card-2 .name,
+.card-4 .name,
+.card-1 h2,
+.card-2 h2,
+.card-4 h2 {
   color: hsl(0, 0%, 100%);
 }
 
-.item-1 .info,
-.item-2 .info,
-.item-4 .info {
-  color: hsl(0, 0%, 50%);
+.card-1 .info,
+.card-2 .info,
+.card-4 .info {
+  color: hsl(0, 0%, 100%, 50%);
 }
 
-.item-1 blockquote,
-.item-2 blockquote,
-.item-4 blockquote {
+.card-1 blockquote,
+.card-2 blockquote,
+.card-4 blockquote {
   color: hsl(0, 0%, 100%, 70%);
 }
 
-.item-3 .name,
-.item-5 .name,
-.item-3 h2,
-.item-5 h2 {
+.card-3 .name,
+.card-5 .name,
+.card-3 h2,
+.card-5 h2 {
   color: hsl(219, 29%, 14%);
 }
 
-.item-3 .info,
-.item-5 .info {
+.card-3 .info,
+.card-5 .info {
   color: hsl(219, 29%, 14%, 50%);
 }
 
-.item-3 blockquote,
-.item-5 blockquote {
+.card-3 blockquote,
+.card-5 blockquote {
   color: hsl(219, 29%, 14%, 70%);
 }
 
@@ -157,45 +167,46 @@ article blockquote {
     max-width: 1264px;
     margin: auto;
     padding: clamp(2rem, 48vh - 17.8rem, 25rem) 2.35rem;
+    transform: translateY(25px);
   }
 
-  .item-1 {
+  .card-1 {
     grid-column: 1 / span 2;
   }
 
-  .item-1 .quote-svg {
+  .card-1 .quote-svg {
     right: 80px;
   }
 
-  .item-4 {
+  .card-4 {
     grid-column: 2 / span 2;
     grid-row: 2;
   }
 
-  .item-5 {
+  .card-5 {
     grid-column: 4;
     grid-row: 1 / span 2;
   }
 
-  .item-2 h2,
-  .item-3 h2,
-  .item-5 h2 {
+  .card-2 h2,
+  .card-3 h2,
+  .card-5 h2 {
     width: 20ch;
   }
 
-  .item-2 blockquote,
-  .item-3 blockquote,
-  .item-5 blockquote {
+  .card-2 blockquote,
+  .card-3 blockquote,
+  .card-5 blockquote {
     width: 30ch;
   }
 
-  .item-1 h2,
-  .item-4 h2 {
+  .card-1 h2,
+  .card-4 h2 {
     width: 48ch;
   }
 
-  .item-1 blockquote,
-  .item-4 blockquote {
+  .card-1 blockquote,
+  .card-4 blockquote {
     width: 71ch;
   }
 }
