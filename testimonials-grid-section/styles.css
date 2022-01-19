@@ -167,7 +167,7 @@ article blockquote {
     max-width: 1264px;
     margin: auto;
     padding: clamp(2rem, 48vh - 17.8rem, 25rem) 2.35rem;
-    transform: translateY(25px);
+    transform: translateY(1rem);
   }
 
   .card-1 {
@@ -191,7 +191,7 @@ article blockquote {
   .card-2 h2,
   .card-3 h2,
   .card-5 h2 {
-    width: 20ch;
+    width: 19ch;
   }
 
   .card-2 blockquote,
