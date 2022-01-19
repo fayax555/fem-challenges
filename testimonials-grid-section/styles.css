@@ -22,6 +22,11 @@ h2 {
   overflow-wrap: break-word;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* ---------------------------------- */
 
 body {
@@ -56,9 +61,7 @@ article > div {
   align-items: center;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+article > div > img {
   height: 36px;
   width: 36px;
   border-radius: 50%;
@@ -83,7 +86,18 @@ article blockquote {
 }
 
 .item-1 {
+  position: relative;
   background-color: hsl(263, 55%, 52%);
+}
+
+.item-1 .quote-svg {
+  position: absolute;
+  top: 5px;
+  right: 22px;
+}
+
+.item-1 > h2 {
+  z-index: 1;
 }
 
 .item-2 {
@@ -149,6 +163,10 @@ article blockquote {
     grid-column: 1 / span 2;
   }
 
+  .item-1 .quote-svg {
+    right: 80px;
+  }
+
   .item-4 {
     grid-column: 2 / span 2;
     grid-row: 2;
@@ -173,7 +191,7 @@ article blockquote {
 
   .item-1 h2,
   .item-4 h2 {
-    width: 47ch;
+    width: 48ch;
   }
 
   .item-1 blockquote,
