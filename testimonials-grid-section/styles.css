@@ -170,6 +170,13 @@ article blockquote {
     transform: translateY(1rem);
   }
 
+  footer {
+    /* translateY(1rem) causes footer to be unclickable, position absolute makes footer clickable */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
   .card-1 {
     grid-column: 1 / span 2;
   }
